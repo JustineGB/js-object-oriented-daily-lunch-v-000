@@ -23,21 +23,9 @@ class Neighborhood {
   }
   
   meals() {
-  //   let meals = this.customers().map(customer => {return customer.meals()});
-  //   return [...new Set(meals[0])];
-  // }
-    let allMeals = [];
-    let neighborhoodMeals;
-    let meals = this.deliveries();
-    meals.forEach(function(delivery) 
-    {neighborhoodMeals = store.allMeals.find(function(allMeals) {
-      return meal.id === delivery.mealId
-    })
-      allMeals.push(neighborhoodMeals) 
-    }) 
-    let unique = [...new Set(allMeals)]
-    return unique;
-    }
+    let meals = this.customers().map(customer => {return customer.meals()});
+    return [...new Set(meals[0])];
+  }
 }
 
 
