@@ -22,11 +22,11 @@ class Neighborhood {
       return customer.neighborhoodId = this.id ;})
   }
   
-  // meals() {
-  //   let orders = this.customers().map(customer => {return customer.meals()});
-  //   const uniqueMeals = [...new Set(meals)];
-  //   return uniqueMeals;
-  // }
+  meals() {
+    let orders = this.customers().map(customer => {return customer.meals()});
+    const uniqueMeals = [...new Set(meals)];
+    return uniqueMeals;
+  }
   
   //   let allMeals = [];
   //   let neighborhoodMeals;
