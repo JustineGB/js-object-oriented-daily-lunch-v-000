@@ -11,19 +11,22 @@ class Neighborhood {
     this.name = name;
     store.neighborhoods.push(this);
   }
+  
   deliveries() {
     return store.deliveries.filter(delivery => {
     return delivery.neighborhoodId === this.id;})
   }
+  
   customers() {
     return store.customers.filter(customer => {
       return customer.neighborhoodId = this.id ;})
   }
-  meals() {
-    let orders = this.customers().map(customer => {return customer.meals()});
-    const uniqueMeals = [...new Set(meals)];
-    return uniqueMeals;
-  }
+  
+  // meals() {
+  //   let orders = this.customers().map(customer => {return customer.meals()});
+  //   const uniqueMeals = [...new Set(meals)];
+  //   return uniqueMeals;
+  // }
   
   //   let allMeals = [];
   //   let neighborhoodMeals;
