@@ -36,7 +36,7 @@ class Neighborhood {
   //     meals.push(result) }) 
   //   }
   // }
-
+}
      
 class Meal {
     constructor(title, price) {
