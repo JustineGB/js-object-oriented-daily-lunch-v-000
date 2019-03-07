@@ -34,7 +34,8 @@ class Neighborhood {
     })
       allMeals.push(neighborhoodMeals) 
     }) 
-    let unique = []
+    let unique = [...new Set(allMeals)]
+    return unique;
     }
   }
 }
