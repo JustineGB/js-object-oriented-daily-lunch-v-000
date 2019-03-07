@@ -25,9 +25,10 @@ class Neighborhood {
   }
   meals() {
     let orders = this.customers().map(customer => {return customer.meals()});
- const uniqueMeals = [...new Set(meals)]
+    const uniqueMeals = [...new Set(meals)]
     return uniqueMeals
   }
+  
   //   let allMeals = [];
   //   let neighborhoodMeals;
   //   this.deliveries().forEach(function(delivery) 
@@ -36,7 +37,6 @@ class Neighborhood {
   //     meals.push(result) }) 
   //   }
   // }
-}
 
      
 class Meal {
