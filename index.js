@@ -37,8 +37,12 @@ class Neighborhood {
     let unique = [...new Set(allMeals)]
     return unique;
     }
-  }
 }
+
+
+
+
+
      
 class Meal {
     constructor(title, price) {
