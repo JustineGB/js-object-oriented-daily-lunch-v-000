@@ -28,7 +28,8 @@ class Neighborhood {
   // }
     let allMeals = [];
     let neighborhoodMeals;
-    this.deliveries().forEach(function(delivery) 
+    let meals = this.deliveries();
+    meals.forEach(function(delivery) 
     {neighborhoodMeals = store.allMeals.find(function(allMeals) {
       return meal.id === delivery.mealId
     })
