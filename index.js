@@ -23,18 +23,20 @@ class Neighborhood {
   }
   
   meals() {
-    let meals = this.customers().map(customer => {return customer.meals()});
-    return [...new Set(meals[0])];
-  }
-  
-  //   let allMeals = [];
-  //   let neighborhoodMeals;
-  //   this.deliveries().forEach(function(delivery) 
-  //   {neighborhoodMeals = store.allMeals.find(function(allMeals) {
-  //     return meal.id === delivery.mealId})
-  //     meals.push(result) }) 
-  //   }
+  //   let meals = this.customers().map(customer => {return customer.meals()});
+  //   return [...new Set(meals[0])];
   // }
+    let allMeals = [];
+    let neighborhoodMeals;
+    this.deliveries().forEach(function(delivery) 
+    {neighborhoodMeals = store.allMeals.find(function(allMeals) {
+      return meal.id === delivery.mealId
+    })
+      allMeals.push(neighborhoodMeals) 
+    }) 
+    let unique = []
+    }
+  }
 }
      
 class Meal {
